@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8ECF9F4AB398714949921994A172E951F6EE818B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8ECF9F4AB398714949921994A172E951F6EE818B" : 9223372036854775807,
+    "92516DE18C9C8F4353BE37F4F32380E405BC978C" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FF05FC36-C470-4C90-91A7-6543212FAA1D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8ECF9F4AB398714949921994A172E951F6EE818B" : "LCActionAlertToolDemo\/",
+    "92516DE18C9C8F4353BE37F4F32380E405BC978C" : "..\/LCActionAlertView"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CustomActionAlertView",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CustomActionAlertView.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/loversunny\/LCActionAlertTool.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8ECF9F4AB398714949921994A172E951F6EE818B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/loversunny\/LCActionAlertView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "92516DE18C9C8F4353BE37F4F32380E405BC978C"
+    }
+  ]
+}

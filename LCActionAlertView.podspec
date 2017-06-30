@@ -1,12 +1,12 @@
-@version = "0.0.1"
+@version = "1.0.1"
 
 Pod::Spec.new do |s|
   s.name         = "LCActionAlertView"
   s.version      = @version
   s.summary      = "简单易用的底部弹出控件."
   s.description  = <<-DESC
-                      首次pods上传
-                      *希望可以成功
+                      拖入LCActionAlertView文件夹即可使用
+                      *
                    DESC
   s.homepage     = "https://github.com/loversunny/LCActionAlertView"
   s.license      = "MIT"

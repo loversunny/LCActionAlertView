@@ -13,9 +13,9 @@
 		6016B5FB1EC724C8002D0775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6016B5F91EC724C8002D0775 /* LaunchScreen.storyboard */; };
 		6016B6091EC72569002D0775 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6016B6041EC72569002D0775 /* AppDelegate.m */; };
 		6016B60A1EC72569002D0775 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6016B6071EC72569002D0775 /* ViewController.m */; };
-		6042037D1F01DC910073DDC0 /* LCActionAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 604203781F01DC910073DDC0 /* LCActionAlertView.m */; };
-		6042037E1F01DC910073DDC0 /* LCActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6042037A1F01DC910073DDC0 /* LCActionCell.m */; };
-		6042037F1F01DC910073DDC0 /* UIView+extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 6042037C1F01DC910073DDC0 /* UIView+extra.m */; };
+		608B3A681F063D150071708C /* LCActionAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 608B3A631F063D150071708C /* LCActionAlertView.m */; };
+		608B3A691F063D150071708C /* LCActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 608B3A651F063D150071708C /* LCActionCell.m */; };
+		608B3A6A1F063D150071708C /* UIView+extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 608B3A671F063D150071708C /* UIView+extra.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,12 +29,12 @@
 		6016B6041EC72569002D0775 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6016B6061EC72569002D0775 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6016B6071EC72569002D0775 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		604203771F01DC910073DDC0 /* LCActionAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCActionAlertView.h; sourceTree = "<group>"; };
-		604203781F01DC910073DDC0 /* LCActionAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCActionAlertView.m; sourceTree = "<group>"; };
-		604203791F01DC910073DDC0 /* LCActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCActionCell.h; sourceTree = "<group>"; };
-		6042037A1F01DC910073DDC0 /* LCActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCActionCell.m; sourceTree = "<group>"; };
-		6042037B1F01DC910073DDC0 /* UIView+extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+extra.h"; sourceTree = "<group>"; };
-		6042037C1F01DC910073DDC0 /* UIView+extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+extra.m"; sourceTree = "<group>"; };
+		608B3A621F063D150071708C /* LCActionAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCActionAlertView.h; sourceTree = "<group>"; };
+		608B3A631F063D150071708C /* LCActionAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCActionAlertView.m; sourceTree = "<group>"; };
+		608B3A641F063D150071708C /* LCActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCActionCell.h; sourceTree = "<group>"; };
+		608B3A651F063D150071708C /* LCActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCActionCell.m; sourceTree = "<group>"; };
+		608B3A661F063D150071708C /* UIView+extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+extra.h"; sourceTree = "<group>"; };
+		608B3A671F063D150071708C /* UIView+extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+extra.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 		6016B5EA1EC724C8002D0775 /* CustomActionAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				604203761F01DC910073DDC0 /* LCActionAlertView */,
+				608B3A611F063D150071708C /* LCActionAlertView */,
 				6016B6021EC72569002D0775 /* AppDelegate */,
 				6016B6051EC72569002D0775 /* Controller */,
 				6016B5F41EC724C8002D0775 /* Main.storyboard */,
@@ -105,18 +105,17 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		604203761F01DC910073DDC0 /* LCActionAlertView */ = {
+		608B3A611F063D150071708C /* LCActionAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				604203771F01DC910073DDC0 /* LCActionAlertView.h */,
-				604203781F01DC910073DDC0 /* LCActionAlertView.m */,
-				604203791F01DC910073DDC0 /* LCActionCell.h */,
-				6042037A1F01DC910073DDC0 /* LCActionCell.m */,
-				6042037B1F01DC910073DDC0 /* UIView+extra.h */,
-				6042037C1F01DC910073DDC0 /* UIView+extra.m */,
+				608B3A621F063D150071708C /* LCActionAlertView.h */,
+				608B3A631F063D150071708C /* LCActionAlertView.m */,
+				608B3A641F063D150071708C /* LCActionCell.h */,
+				608B3A651F063D150071708C /* LCActionCell.m */,
+				608B3A661F063D150071708C /* UIView+extra.h */,
+				608B3A671F063D150071708C /* UIView+extra.m */,
 			);
-			name = LCActionAlertView;
-			path = ../../../LCActionAlertView/LCActionAlertView;
+			path = LCActionAlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,10 +193,10 @@
 			files = (
 				6016B60A1EC72569002D0775 /* ViewController.m in Sources */,
 				6016B6091EC72569002D0775 /* AppDelegate.m in Sources */,
-				6042037D1F01DC910073DDC0 /* LCActionAlertView.m in Sources */,
+				608B3A681F063D150071708C /* LCActionAlertView.m in Sources */,
 				6016B5ED1EC724C8002D0775 /* main.m in Sources */,
-				6042037E1F01DC910073DDC0 /* LCActionCell.m in Sources */,
-				6042037F1F01DC910073DDC0 /* UIView+extra.m in Sources */,
+				608B3A691F063D150071708C /* LCActionCell.m in Sources */,
+				608B3A6A1F063D150071708C /* UIView+extra.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

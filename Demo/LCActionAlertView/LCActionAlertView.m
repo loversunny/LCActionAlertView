@@ -24,6 +24,7 @@
 
 @property(nonatomic,copy)  void(^canceledBlock)();
 
+@property(nonatomic,strong) NSString * title;
 
 @end
 
@@ -40,8 +41,7 @@
     return Alert;
 }
 
-+ (void)showActionViewNames:(NSArray *)names completed:(void (^)(NSInteger))completed canceled:(void (^)())canceled{
-    
++ (void)showActionViewNames:(NSArray *)names completed:(void(^)(NSInteger index,NSString *handleName))completed canceled:(void(^)())canceled{
     if (!names || !names.count) return;
     LCActionAlertView *alert = [LCActionAlertView shareInstance];
     alert.handleNames = names;
@@ -53,14 +53,22 @@
     UITableView *mainView              = alert.mainView;
     UIWindow *keyWindow       = [UIApplication sharedApplication].keyWindow;
     [keyWindow addSubview:coverView];
+    CGFloat H = 50*(names.count+1)+5;
+    if (alert.title != nil) {
+        H += 30*KHratio;
+    }
+    
     [UIView animateWithDuration:0.25 animations:^{
         coverView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5];
-        mainView.frame = CGRectMake(0, UIScreenHeight - 50*(names.count+1)-5, UIScreenWidth, 50*(names.count+1)+5);
+        mainView.frame = CGRectMake(0, UIScreenHeight - H, UIScreenWidth, H);
     }];
     
 }
 
-
++ (void)showActionViewNames:(NSArray *)names title:(NSString *)title completed:(void(^)(NSInteger index,NSString *handleName))completed canceled:(void(^)())canceled{
+    [LCActionAlertView shareInstance].title = title;
+    [LCActionAlertView showActionViewNames:names completed:completed canceled:canceled];
+}
 
 
 #pragma mark- table
@@ -106,8 +114,28 @@
     [self removeMain];
 }
 
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    if (section == 0 && _title != nil) {
+        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, UIScreenWidth, 30*KHratio)];
+        UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, UIScreenWidth-24, 30*KHratio)];
+        label.numberOfLines = 0;
+        label.font = [UIFont systemFontOfSize:10];
+        label.textColor = [UIColor lightGrayColor];
+        label.textAlignment = NSTextAlignmentCenter;
+        label.text = _title;
+        [view addSubview:label];
+        label.centerX = view.centerX;
+        return view;
+    }
+    return [UIView new];
+}
+
+
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
+    if (section == 0 && _title != nil) {
+        return 30*KHratio;
+    }
     if (section ==1) {
         return 5.f;
     }
@@ -127,6 +155,7 @@
         [LCActionAlertView shareInstance].coverView = nil;
         [LCActionAlertView shareInstance].mainView  = nil;
         [LCActionAlertView shareInstance].show      = NO;
+        [LCActionAlertView shareInstance].title = nil;
     }];
 }
 

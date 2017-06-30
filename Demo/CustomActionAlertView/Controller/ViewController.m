@@ -19,13 +19,27 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [LCActionAlertView showActionViewNames:@[@"我",@"和"] completed:^(NSInteger index,NSString * name) {
+- (IBAction)btn1:(id)sender {
+    
+    [LCActionAlertView showActionViewNames:@[@"取消收藏",@"取消订阅"] title:@"取消收藏或者订阅" completed:^(NSInteger index, NSString *handleName) {
+        NSLog(@"%ld",index);
+    } canceled:^{
+        NSLog(@"canceled");
+    }];
+    
+    
+}
+
+
+
+- (IBAction)btn2:(id)sender {
+    [LCActionAlertView showActionViewNames:@[@"收藏",@"订阅"] completed:^(NSInteger index,NSString * name) {
         NSLog(@"%ld",index);
     } canceled:^{
         NSLog(@"canceled");
     }];
 }
+
 
 
 
